@@ -1,0 +1,12 @@
+POST http://localhost:3001/api/contacts
+content-type: application/json
+
+{
+  "name": "Jhoan Canchila",
+  "email": "jcanchila@gmail.com",
+  "phone": "3132623930",
+  "message": "este es un mensaje jd"
+}
+
+###recuperar los testimonios
+GET http://localhost:3030/api/testimonials
