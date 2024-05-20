@@ -22,7 +22,19 @@ const sendEmail = async ( email ) => {
   });
   
 };
+const sendEmailToBussines = async ( email, message, name ) => {
+
+  // send mail with defined transport object
+  const info = await transporter.sendMail({
+    from: email, // sender address
+    to: "tatoos.julia2018@gmail.com", // list of receivers
+    subject: `Contacto: ${ name }`, // Subject line
+    html: message
+  });
+  
+};
 
 module.exports= {
-  sendEmail
+  sendEmail,
+  sendEmailToBussines
 }

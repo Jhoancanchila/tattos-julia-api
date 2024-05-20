@@ -1,6 +1,6 @@
 const { validateContact } = require("../utils/schemas/contact");
 const contactModel = require("../models/mysql/contact");
-const { sendEmail } = require("../services/sendEmail");
+const { sendEmail, sendEmailToBussines } = require("../services/sendEmail");
 const createNewContact = async(req, res) => {
   const validateObject = validateContact(req.body);
 
@@ -13,6 +13,7 @@ const createNewContact = async(req, res) => {
       data: createdContact
     })
     sendEmail(validateObject.data.email);
+    sendEmailToBussines(validateObject.data.email,validateObject.data.message,validateObject.data.name);
   } catch (error) {
     res.status(500).send({
       success: false,
