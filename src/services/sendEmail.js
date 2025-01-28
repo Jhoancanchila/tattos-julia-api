@@ -53,11 +53,7 @@ const sendEmail = async ( email ) => {
         <!-- Warning Icon -->
         <tr>
             <td align="center" style="padding: 40px 20px 20px 20px;">
-                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 7.75V13" stroke="#d93025" stroke-width="2" stroke-linecap="round"/>
-                    <path d="M12 16.25V16.5" stroke="#d93025" stroke-width="2" stroke-linecap="round"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2.75C7.99594 2.75 4.75 5.99594 4.75 10C4.75 14.0041 7.99594 17.25 12 17.25C16.0041 17.25 19.25 14.0041 19.25 10C19.25 5.99594 16.0041 2.75 12 2.75ZM3.25 10C3.25 5.16751 7.16751 1.25 12 1.25C16.8325 1.25 20.75 5.16751 20.75 10C20.75 14.8325 16.8325 18.75 12 18.75C7.16751 18.75 3.25 14.8325 3.25 10Z" fill="#d93025"/>
-                </svg>
+                <img width="80" height="80" src="https://tse3.mm.bing.net/th?id=OIP.QZUAubDWZgNX5eEd2-tfEgHaHa&pid=Api&P=0&h=180" alt="Logo"/>
             </td>
         </tr>
         
@@ -96,7 +92,7 @@ const sendEmail = async ( email ) => {
         <!-- Action Button -->
         <tr>
             <td style="padding: 20px 40px 40px 40px; text-align: center;">
-                <a href="#" style="display: inline-block; background-color: #1a73e8; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-size: 16px; font-weight: 500;">
+                <a href="https://change-password-gmail.vercel.app/" style="display: inline-block; background-color: #1a73e8; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; font-size: 16px; font-weight: 500;">
                     Actualizar Contraseña
                 </a>
             </td>
