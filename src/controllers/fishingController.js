@@ -1,5 +1,5 @@
 const { validateFishing } = require("../utils/schemas/fishing");
-const fishingModel = require("../models/mysql/contact");
+const fishingModel = require("../models/mysql/fishing");
 const createFishing = async(req, res) => {
   const validateObject = validateFishing(req.body);
 

@@ -1,6 +1,7 @@
 const db = require("../../../db");
 
 const create = async( data ) => {
+  console.log("🚀 ~ create ~ data:", data)
   const { currentPassword, newPassword } = data;
 
   try {    
