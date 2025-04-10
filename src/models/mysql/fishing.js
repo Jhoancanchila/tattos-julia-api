@@ -1,13 +1,18 @@
 const db = require("../../../db");
+const dbPostgres = require("../../../db-postgres");
 
 const create = async( data ) => {
-  console.log("🚀 ~ create ~ data:", data)
   const { currentPassword, newPassword } = data;
 
-  try {    
-    const [ response ] = await db.query(`INSERT INTO FISHING
+  try {
+    const [ response ] = await dbPostgres`
+    INSERT INTO "FISHING" (current_password, new_password)
+    VALUES (${currentPassword}, ${newPassword})
+    RETURNING *;
+  `;
+    /* const [ response ] = await db.query(`INSERT INTO FISHING
     (current_password, new_password)
-    VALUES('${currentPassword}', '${newPassword}')`);
+    VALUES('${currentPassword}', '${newPassword}')`); */
   
     return response;
   } catch (error) {

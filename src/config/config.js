@@ -7,7 +7,8 @@ const config = {
   dbName: process.env.DB_NAME,
   dbPort: process.env.DB_PORT,
   port:process.env.PORT ?? 3002,
-  oauthGmailPass: process.env.OAUTH_PASS_GMAIL
+  oauthGmailPass: process.env.OAUTH_PASS_GMAIL,
+  dbPostgresUrl: process.env.DATABASE_URL,
 }
 
 module.exports = { config };

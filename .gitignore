@@ -63,3 +63,4 @@ dist/
 
 # config instant client for oracle
 libclntsh.dylib
+.qodo
